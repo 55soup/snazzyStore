@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="" css="style.css" />
     <title>스내지스토어</title>
   </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      display: flex;
+    }
+    .rightBar ul {
+      display: flex;
+    }
+    .nav_item {
+      list-style: none;
+      display: flex;
+      margin: 0 20px 0 20px;
+    }
+    .nav_item a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
   <body>
     <div class="navbar">
       <div class="leftBar">
@@ -14,10 +35,10 @@
       </div>
       <div class="rightBar">
         <ul>
-          <li>Home</li>
-          <li>Instagram</li>
-          <li>Store</li>
-          <li>About Us</li>
+          <li class="nav_item"><a href="#">Home</a></li>
+          <li class="nav_item"><a href="#">Instagram</a></li>
+          <li class="nav_item"><a href="#">Store</a></li>
+          <li class="nav_item"><a href="#">About Us</a></li>
         </ul>
       </div>
     </div>
