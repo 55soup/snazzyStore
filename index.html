@@ -62,6 +62,38 @@
       background-color: var(--main-color);
       min-height: 1500px;
     }
+    /* about Us page */
+    /* about Us page */
+    /* welcome page */
+    .welcome span {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 32px;
+      margin-top: 5em;
+    }
+    .introduce_page {
+      /* 부모 요소 height 0이 됨 */
+      margin-top: 5em;
+    }
+    .main_img1 {
+      width: 584px;
+      height: 778px;
+      background-image: url(img/main1.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 368px;
+      z-index: 50;
+    }
+    .bottom_box {
+      width: 1450px;
+      height: 383px;
+      background-color: var(--main-color);
+      float: right;
+      position: relative;
+      top: 400px;
+    }
+    /* welcome page */
   </style>
   <body>
     <header>
@@ -80,7 +112,14 @@
     <main>
       <div class="slider"></div>
       <div class="contentBox aboutUs"></div>
-      <div class="contentBox welcome"></div>
+      <div class="contentBox welcome">
+        <span>Welcome to SNNAZY STORE</span>
+        <div class="introduce_page">
+          <div class="main_img1"></div>
+          <div class="bottom_box"></div>
+          <div class="img_collected"></div>
+        </div>
+      </div>
       <div class="contentBox slider2"></div>
       <div class="contentBox popup"></div>
     </main>
