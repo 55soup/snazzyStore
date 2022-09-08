@@ -1,6 +1,5 @@
 document.addEventListener("scroll", () => {
   let y = window.scrollY;
-  console.log(y);
   if (y > 600) {
     document.getElementById("navbar").style.backdropFilter = "blur(10px)";
   } else {
