@@ -113,6 +113,37 @@
     /* welcome page */
     /* slider2 */
     /* slider2 */
+    /* popup */
+    .popup {
+      height: 1000px;
+    }
+    .popup_photo {
+      width: 165px;
+      height: 230px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 40;
+    }
+    .img_collected2 {
+      display: flex;
+      column-gap: 1.3em;
+      position: absolute;
+      left: 5em;
+    }
+    .popup_lines {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1em;
+      position: absolute;
+      right: 5em;
+      top: 326em;
+    }
+    .blue_line {
+      width: 680px;
+      height: 35px;
+    }
+    /* popup */
   </style>
   <body>
     <header>
@@ -160,10 +191,35 @@
         <span style="color: white">Clothes & Accessory</span>
       </section>
       <section class="contentBox popup">
-        <div class="post"></div>
-        <div class="post"></div>
+        <div class="img_collected2">
+          <div
+            class="popup_photo"
+            style="background-image: url(img/popup/photo1.png)"
+          ></div>
+          <div
+            class="popup_photo"
+            style="background-image: url(img/popup/photo2.png)"
+          ></div>
+        </div>
         <span>click me</span>
-        <div class="popup_line"></div>
+        <div class="popup_lines">
+          <div
+            class="blue_line"
+            style="background-color: var(--main-color)"
+          ></div>
+          <div
+            class="blue_line"
+            style="background-color: var(--main-color); opacity: 0.8"
+          ></div>
+          <div
+            class="blue_line"
+            style="background-color: var(--main-color); opacity: 0.6"
+          ></div>
+          <div
+            class="blue_line"
+            style="background-color: var(--main-color); opacity: 0.4"
+          ></div>
+        </div>
       </section>
     </main>
     <script src="js/index.js"></script>
