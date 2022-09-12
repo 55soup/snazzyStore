@@ -6,18 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" css="style.css" />
     <title>스내지스토어</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <style>
     html {
       scroll-behavior: smooth;
     }
-    * {
-      /* font-family: ; */
-    }
     :root {
       --main-color: #02054f;
     }
+    @font-face {
+      font-family: "NotoSansKR";
+      src: url("../fonts/openSans/OpenSans-SemiBold.woff") format("woff");
+      unicode-range: U+AC00-D7A3;
+      font-style: normal;
+    }
     body {
+      font-family: "Noto Sans KR", sans-serif, "Noto Serif", serif;
+    }
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -147,6 +159,12 @@
       right: 5em;
       top: 326em;
     }
+    .click_me {
+      position: relative;
+      top: 7em;
+      float: right;
+      right: 3em;
+    }
     .blue_line {
       width: 680px;
       height: 35px;
@@ -219,7 +237,7 @@
             style="background-image: url(img/popup/photo2.png)"
           ></div>
         </div>
-        <span>click me</span>
+        <span class="click_me">click me</span>
         <div class="popup_lines">
           <div
             class="blue_line"
