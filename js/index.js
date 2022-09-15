@@ -7,3 +7,11 @@ document.addEventListener("scroll", () => {
   }
   //   document.getElementById("navbar").style.backgroundColor("red");
 });
+
+let line1 = document.getElementById("line1");
+let popup_img = document.getElementsByClassName("popup_inner")[0];
+line1.onclick = changeImg;
+
+function changeImg() {
+  line1.style.display("block");
+}
