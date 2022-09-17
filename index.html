@@ -182,6 +182,7 @@
     .blue_line {
       width: 680px;
       height: 35px;
+      cursor: pointer;
     }
     /* popup */
   </style>
@@ -196,6 +197,7 @@
           <li class="nav_item"><a href="#">Instagram</a></li>
           <li class="nav_item"><a href="#">Store</a></li>
           <li class="nav_item"><a href="#">About Us</a></li>
+          <button style="display: none">햄버거버튼</button>
         </div>
       </div>
     </header>
@@ -264,6 +266,7 @@
             class="blue_line"
             id="line1"
             style="background-color: var(--main-color)"
+            onclick="sayHello()"
           ></div>
           <div
             class="blue_line"
@@ -284,5 +287,10 @@
       </section>
     </main>
     <script src="js/index.js"></script>
+    <script>
+      function sayHello() {
+        console.log("Hello there !!");
+      }
+    </script>
   </body>
 </html>
