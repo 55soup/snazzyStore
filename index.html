@@ -45,7 +45,7 @@
       display: flex;
       position: absolute;
       width: 100%;
-      z-index: 100;
+      z-index: 200;
       padding: 20px 20px 20px 20px;
       position: fixed;
     }
@@ -148,14 +148,17 @@
     .popup_inner {
       width: 50rem;
       height: 30rem;
+      position: absolute;
+      left: 38rem;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       z-index: 50;
       border: var(--main-color) 10px solid; /* 바깥테두리 색깔 바꿈 */
-      margin: 0 auto; /* 가운데 정렬 */
+      /* margin: 0 auto; 가운데 정렬 */
       box-shadow: 5px 16px 18px -7px grey;
       display: none;
+      z-index: 100;
     }
     .img_collected2 {
       display: flex;
@@ -254,6 +257,7 @@
             style="background-image: url(img/popup/photo2.png)"
           ></div>
         </div>
+        <span class="click_me">click me</span>
         <div class="popup_photo">
           <div
             class="popup_inner"
@@ -261,7 +265,6 @@
           ></div>
           <div class="bluebox"></div>
         </div>
-        <span class="click_me">click me</span>
         <div class="popup_lines">
           <div
             class="blue_line"
