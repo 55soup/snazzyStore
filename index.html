@@ -28,6 +28,7 @@
     }
     body {
       font-family: "Noto Sans KR", sans-serif, "Noto Serif", serif;
+      overflow-x: hidden; /* 가로스크롤 없애기 */
     }
     * {
       margin: 0;
@@ -171,7 +172,7 @@
       position: absolute;
       right: 5em;
       top: 326em;
-      z-index: -1;
+      z-index: 50;
     }
     .click_me {
       position: relative;
@@ -266,7 +267,6 @@
             class="blue_line"
             id="line1"
             style="background-color: var(--main-color)"
-            onclick="sayHello()"
           ></div>
           <div
             class="blue_line"
@@ -287,10 +287,5 @@
       </section>
     </main>
     <script src="js/index.js"></script>
-    <script>
-      function sayHello() {
-        console.log("Hello there !!");
-      }
-    </script>
   </body>
 </html>

@@ -1,10 +1,28 @@
-let line1 = document.getElementById("line1");
-let popup_img = document.getElementsByClassName("popup_inner")[0];
-line1.addEventListener("click", changeImg);
+// 객체 배열로 선언하기
+const line1 = document.getElementById("line1");
+const line2 = document.getElementById("line2");
+const line3 = document.getElementById("line3");
+const line4 = document.getElementById("line4");
+const img = document.getElementsByClassName("popup_inner")[0];
+line1.addEventListener("click", () => {
+  img.style.backgroundImage = "url(img/clickme/1.png)";
+  img.style.display = "block";
+});
 
-function changeImg() {
-  line1.style.display("block");
-}
+line2.addEventListener("click", () => {
+  img.style.display = "block";
+  img.style.backgroundImage = "url(img/clickme/2.png)";
+});
+
+line3.addEventListener("click", () => {
+  img.style.display = "block";
+  img.style.backgroundImage = "url(img/clickme/3.png)";
+});
+
+line4.addEventListener("click", () => {
+  img.style.display = "block";
+  img.style.backgroundImage = "url(img/clickme/4.png)";
+});
 
 document.addEventListener("scroll", () => {
   let y = window.scrollY;
