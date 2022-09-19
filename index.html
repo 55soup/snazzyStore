@@ -21,13 +21,22 @@
       --main-color: #02054f;
     }
     @font-face {
-      font-family: "NotoSansKR";
-      src: url("../fonts/openSans/OpenSans-SemiBold.woff") format("woff");
-      unicode-range: U+AC00-D7A3;
+      /* 영어 */
+      font-family: "Noto Serif";
+      src: url("fonts/notoSerif_regular.woff") format("woff");
+      unicode-range: U+0041-005A, U+0061-007A;
       font-style: normal;
     }
+    @font-face {
+      /* 한글 */
+      font-family: "Noto Sans KR";
+      src: url("fonts/notoSansKr_regular.woff") format("woff");
+      unicode-range: U+AC00-D7A3;
+      font-style: nomal;
+    }
     body {
-      font-family: "Noto Sans KR", sans-serif, "Noto Serif", serif;
+      font-family: "Noto Sans KR";
+      font-family: "Noto Serif", sans-serif;
       overflow-x: hidden; /* 가로스크롤 없애기 */
     }
     * {
@@ -189,6 +198,21 @@
       cursor: pointer;
     }
     /* popup */
+
+    @media screen and (max-width: 1280px) {
+      .popup_inner {
+        left: 3vw;
+        width: 90vw;
+        height: 57vw;
+      }
+    }
+    @media screen and (max-width: 360px) {
+      .popup_inner {
+        left: 3vw;
+        width: 90vw;
+        height: 57vw;
+      }
+    }
   </style>
   <body>
     <header>
