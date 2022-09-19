@@ -33,3 +33,15 @@ document.addEventListener("scroll", () => {
   }
   //   document.getElementById("navbar").style.backgroundColor("red");
 });
+
+const show_menu = document.getElementsByClassName("show_menu")[0];
+const menuBtn = document.getElementById("btn-menu");
+const inMenuBtn = document.getElementsByClassName("bx-menu")[0];
+const rightMenu = document.getElementsByClassName("rightBar")[0];
+
+menuBtn.addEventListener("click", () => {
+  rightMenu.classList.toggle("show_menu");
+  inMenuBtn.classList.toggle("bx-menu");
+  inMenuBtn.classList.toggle("bxs-x-square");
+  rightMenu.classList.toggle("show_menu");
+});

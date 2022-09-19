@@ -12,6 +12,15 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
   </head>
   <style>
     html {
@@ -50,6 +59,13 @@
       background-size: cover;
       min-height: 50em;
     }
+    .btn-menu {
+      /*햄버거메뉴*/
+      display: none;
+      background-color: transparent;
+      border: transparent;
+      cursor: pointer;
+    }
     .navbar {
       display: flex;
       position: absolute;
@@ -62,6 +78,7 @@
       display: flex;
       width: 85%;
       justify-content: flex-end;
+      flex-direction: row;
       margin: 0;
     }
     .nav_item {
@@ -154,10 +171,13 @@
       background-repeat: no-repeat;
       z-index: 40;
     }
+    .popup_photo {
+      overflow: hidden;
+    }
     .popup_inner {
       width: 50rem;
       height: 30rem;
-      position: absolute;
+      position: relative;
       left: 38rem;
       background-size: cover;
       background-position: center;
@@ -200,14 +220,38 @@
     /* popup */
 
     @media screen and (max-width: 1280px) {
-      .popup_inner {
-        left: 3vw;
-        width: 90vw;
-        height: 57vw;
+      .navbar {
+        padding: 0;
       }
-    }
-    @media screen and (max-width: 360px) {
-      .popup_inner {
+      .leftBar {
+        display: none;
+      }
+      .btn-menu {
+        display: inline-flex;
+        position: fixed;
+        padding: 1rem;
+      }
+      .navbar .rightBar {
+        visibility: hidden;
+        display: flex;
+        height: 0vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 3rem;
+        padding-top: 4rem;
+        background-color: white;
+        transition: all 0.3s ease-out 0s;
+      }
+
+      .show_menu {
+        visibility: visible;
+        height: 100vh;
+      }
+      .rightBar .nav_item a {
+        color: black;
+      }
+      .popup_inner,
+      .bluebox {
         left: 3vw;
         width: 90vw;
         height: 57vw;
@@ -217,9 +261,11 @@
   <body>
     <header>
       <div class="navbar" id="navbar">
+        <button class="btn-menu" id="btn-menu">
+          <i class="bx bx-menu bx-sm" style="color: white"></i>
+        </button>
         <div class="leftBar">
           <div style="color: white">SNAZZY STORE</div>
-          <button style="display: none">햄버거버튼</button>
         </div>
         <div class="rightBar" style="overflow: hidden">
           <li class="nav_item"><a href="#">Home</a></li>
