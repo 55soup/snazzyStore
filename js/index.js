@@ -35,12 +35,16 @@ document.addEventListener("scroll", () => {
 });
 
 const show_menu = document.getElementsByClassName("show_menu")[0];
+// const color_menu = document.getElementsByClassName("active")[0];
+const color_menu = document.getElementById("active");
 const menuBtn = document.getElementById("btn-menu");
 const inMenuBtn = document.getElementsByClassName("bx-menu")[0];
-const rightMenu = document.getElementsByClassName("rightBar")[0];
+const inInMenuBtn = document.getElementsByClassName("bx")[0];
 
+const rightMenu = document.getElementsByClassName("rightBar")[0];
 menuBtn.addEventListener("click", () => {
-  rightMenu.classList.toggle("show_menu");
   inMenuBtn.classList.toggle("bx-menu");
   inMenuBtn.classList.toggle("bxs-x-square");
+  rightMenu.classList.toggle("show_menu");
+  inInMenuBtn.classList.toggle("active");
 });
