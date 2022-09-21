@@ -43,5 +43,4 @@ menuBtn.addEventListener("click", () => {
   rightMenu.classList.toggle("show_menu");
   inMenuBtn.classList.toggle("bx-menu");
   inMenuBtn.classList.toggle("bxs-x-square");
-  rightMenu.classList.toggle("show_menu");
 });
