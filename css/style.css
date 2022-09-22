@@ -32,9 +32,11 @@
   display: flex;
   margin: 0 20px 0 20px;
 }
+.bx-menu,
 .nav_item a {
   text-decoration: none;
   color: white;
+  transition: 0.5s;
 }
 .aboutUs {
   background-color: var(--main-color);
@@ -58,13 +60,20 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 43%;
   width: 18vw;
   height: 5vw;
   background-color: rgb(2, 5, 79, 0.5);
   border: transparent;
   color: white;
   font-size: 3vw;
+}
+.swiper-button-prev {
+  left: 4vw !important;
+  width: 1vw !important;
+}
+.swiper-button-next {
+  right: 4vw !important;
 }
 /* about Us page */
 /* about Us page */
@@ -233,7 +242,9 @@
     left: 50vw;
     top: 40vw;
   }
-
+  .swiper-slide.swiper-slide-active Button {
+    left: 46%;
+  }
   .navbar {
     padding: 0;
   }
