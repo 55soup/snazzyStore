@@ -76,6 +76,25 @@
   right: 4vw !important;
 }
 /* about Us page */
+.swiper-slide button{
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  width: 18vw;
+  height: 5vw;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: transparent;
+  color: #02054F;
+  font-size: 3vw;
+}
+.aboutUsImg{
+  position: relative;
+  width: 18vw;
+  height: 42wv;
+  top: 200px;
+  left: 25%;
+}
 /* about Us page */
 /* welcome page */
 .contentBox span {
