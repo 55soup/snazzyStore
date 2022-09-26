@@ -132,7 +132,8 @@
   justify-content: flex-end;
   position: absolute;
   left: 43vw;
-  top: 175rem;
+  /* top: 175rem; */
+  top: calc(160rem + 12vw);
 }
 .welcome_photo {
   width: 165px;
